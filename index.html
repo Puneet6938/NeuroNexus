@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="form-title">User Information</h2>
+        <form >
+            
+            <div class="form-group">
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contact_number">Contact Number:</label>
+                <input type="tel" id="contact_number" name="contact_number">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="company_name">Company Name:</label>
+                <input type="text" id="company_name" name="company_name">
+            </div>
+
+            <div class="form-group">
+                <label for="email_address">Email Address:</label>
+                <input type="email" id="email_address" name="email_address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <select id="department" name="department">
+                    <option value="hr">HR</option>
+                    <option value="sales">Sales</option>
+                    <option value="development">Development</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+
+            <div class="form-group radio-group">
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="prefer_not_to_say" name="gender" value="prefer_not_to_say">
+                <label for="prefer_not_to_say">Prefer not to say</label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
